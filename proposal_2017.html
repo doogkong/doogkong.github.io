@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <!-- <link href="favicon.ico" rel="shortcut icon"/> -->
+    <title>MLRec 2017</title>
+    <style type="text/css" media="screen">
+      body {
+        background-color: #f9f9f7;
+        margin: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+
+      .container { margin: 50px auto 40px auto; width: 600px; text-align: center; }
+
+      a { color: #0db14b; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+
+      h1 { width: 500px; position:relative; left: 50px; letter-spacing: 0px; line-height: 60px; font-size: 24px; font-weight: 100; margin: 0px 0 50px 0; text-shadow: 0 1px 0 #fff; }
+      p { color: rgba(0, 0, 0, 0.5); margin: 20px 0; line-height: 1.6; text-align: left; }
+
+      ul { list-style: none; margin: 25px 0; padding: 0; }
+      li { text-align: left; color: rgba(0, 0, 0, 0.5); line-height: 1.6;}
+      /*ul { list-style: none; margin: 25px 0; padding: 0; }
+      li { display: table-cell; font-weight: bold; width: 1%; }*/
+
+      .logo { display: inline-block; margin-top: 35px; }
+      .logo-img-2x { display: none; }
+      @media
+      only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (   min--moz-device-pixel-ratio: 2),
+      only screen and (     -o-min-device-pixel-ratio: 2/1),
+      only screen and (        min-device-pixel-ratio: 2),
+      only screen and (                min-resolution: 192dpi),
+      only screen and (                min-resolution: 2dppx) {
+        .logo-img-1x { display: none; }
+        .logo-img-2x { display: inline-block; }
+      }
+
+      #suggestions {
+        margin-top: 35px;
+        color: #ccc;
+      }
+      #suggestions a {
+        color: #666666;
+        font-weight: 200;
+        font-size: 14px;
+        margin: 0 10px;
+      }
+
+      img.grayscale {
+        filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+        filter: gray; /* IE6-9 */
+        -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+      }
+
+      img.grayscale:hover {
+        filter: none;
+        -webkit-filter: grayscale(0%);
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <h1><strong>SDM 2017 Workshop Proposal</strong><br/> 3<sup>rd</sup> International Worshop on Machine Learning Methods for Recommender Systems (MLRec)</h1>
+      <p><strong>Contact Information of Organizers:</strong> <br/>
+      <font color="#0db14b"><a href="mailto:xning@iupui.edu">Xia Ning</a></font>, Indiana University – Purdue University Indianapolis<br/>
+      <font color="#0db14b"><a href="mailto:doogkong@gmail.com">Deguang Kong</a></font>, Samsung Research America<br/>
+      <font color="#0db14b"><a href="mailto:George@karypis.net">George Karypis</a></font>, University of Minnesota</p>
+
+      
+
+      <p><strong>Description</strong><br/>
+        The proposed workshop aims to bring the attention of researchers to the various data mining and machine learning methods for recommender systems. This is the third edition of the MLRec workshop. We had well-attended first two editions of the workshop with <a href="2015/index.html" target="blank">SDM 2015</a> and <a href="2016/index.html" target="blank">SDM 2016</a>.
+      </p>
+
+      <p>Since the inception of recommender systems, there have been a lot of machine learning and data mining algorithms designed for effective and efficient recommendation. To name a few, the matrix factorization techniques [1, 2, 3] are widely used to model the latent space in which users and items interact with each other. The factorization machine [4, 5] uses bilinear regression models [6, 7] to capture the non-linear interactions among the user features and item features. In the past years, researchers have utilized many machine learning techniques such as online learning, metric learning, sparse learning, multi-task learning also to foster the development of recommender systems.</p>
+
+      <p>This workshop focuses on applying novel as well as existing machine learning and data mining methodologies for improving recommender systems. Indeed, there are many established conferences such as NIPS and ICML that focus on the study of theoretical properties of machine learning algorithms. On the other hand, the recent developed conference ACM RecSys focuses on different aspects of designing and implementing recommender systems. We believe that there is a gap between these two ends, and this workshop aims at bridging the recent advances of machine learning and data mining algorithms to improving recommender systems. Since many recommendation approaches are built upon data mining and machine learning algorithms, these approaches are deeply rooted in their foundations. As such, there is an urgent need for researchers from the two communities to jointly work on 1) what are the recent developed machine learning and data mining techniques that can be leveraged to address challenges in recommender systems, and 2) from challenges in recommender systems, what are the practical research directions in the machine learning and data mining community.</p>
+
+      <p>We encourage submissions on a variety of topics, including but not limited to:</p>
+      <ol>
+        <li>Novel machine learning algorithms for recommender systems, e.g., new content aware recommendation algorithms, new algorithms for matrix factorization handling cold-start items. </li>
+        <li>Novel approaches for applying existing machine learning algorithms, e.g., applying bilinear models, sparse learning, metric learning, neural networks and deep learning, for recommender systems. </li>
+        <li>Novel optimization algorithms and analysis for improving recommender systems, e.g., parallel/distributed optimization techniques and efficient stochastic gradient descent. </li>
+        <li>Industrial practices and implementations of recommendation systems, e.g., feature engineering, model ensemble, and lessons from large-scale implementations of recommender systems.</li>
+      </ol>
+      <p>
+      We believe that advancements on these topics will benefit a variety of algorithm and application domains.
+      </p>
+      
+      <p>Reference<br/>
+        [1] Koren, Yehuda, Robert Bell, and Chris Volinsky. "Matrix factorization techniques for recommender systems." Computer 42.8 (2009): 30-37.<br/>
+
+        [2] Mnih, Andriy, and Ruslan Salakhutdinov. "Probabilistic matrix factorization." Advances in neural information processing systems. 2007.<br/>
+
+        [3] Weimer, Markus, et al. "Maximum Margin Matrix Factorization for Collaborative Ranking." Advances in neural information processing systems (2007).<br/>
+
+        [4] Rendle, Steffen. "Factorization machines." Data Mining (ICDM), 2010 IEEE 10th International Conference on. IEEE, 2010.<br/>
+
+        [5] Rendle, Steffen. "Factorization machines with libFM." ACM Transactions on Intelligent Systems and Technology (TIST) 3.3 (2012): 57.<br/>
+
+        [6] D. C. Montgomery, E. A. Peck, and G. G. Vining. Introduction to linear regression analysis, volume 821. Wiley, 2012.<br/>
+
+        [7] T. Hastie, R. Tibshirani, J. Friedman, T. Hastie, J. Friedman, and R. Tibshirani. The elements of statistical learning, volume 2. Springer, 2009.<br/>
+      </p>
+
+
+      <p><strong>Format</strong><br/>
+        The proposed workshop will have invited talks, oral/poster presentation from paper authors, panel/open discussions. <br/>
+        Length: 1 day (preferred) or half day
+      </p>
+
+      <p><strong>Target Audience</strong><br/>
+        The workshop has a board target audience, including but not limited to, machine learning researchers, data mining practitioners, academic researcher and industrial practitioners on recommender systems. 
+      </p>
+
+      <p><strong>List of Potential Participants</strong><br/>
+        <em>Potential PC Members</em><br/>
+
+        Yehuda Koren (Google, USA)<br/>
+        George Karypis (University of Minnesota, USA)<br/>
+        Joseph A. Konstan (University of Minnesota, USA)<br/>
+        Thomas S. Huang (University of Illinois at Urbana-Champaign, USA)<br/>
+        Jieping Ye (University of Michigan, USA)<br/>
+        Zhi-Hua Zhou (Nanjing University, China)<br/>
+        Hui Xiong (Rutgers, the State University of New Jersey, USA)<br/>
+        Xia Ning (Indiana University-Purdue University Indianapolis, USA)<br/>
+        Yong Ge (University of North Carolina at Charlotte, USA)<br/>
+        Qiang Yang (Hong Kong University of Science and Technology, Hong Kong, China)<br/>
+        Chris Ding (University of Taxes, Arlington, USA)<br/>
+        Ronny Lempel (Yahoo Labs, USA)<br/>
+        Chih-Jen Lin (National Taiwan University, Taiwan, China)<br/>
+        Pang-Ning Tan (Michigan State University)<br/><br/>
+
+        <em>Potential Invited Speakers</em><br/>
+
+        Yehuda Koren, ‎Staff Research Scientist, Google<br/>
+        Deepak Agarwal, Director, LinkedIn<br/>
+        George Karypis, Professor, University of Minnesota<br/>
+        Nathan N. Liu, Senior Software Engineer, Google<br/>
+        Huiji Gao, Applied Research Engineer, Linkedin<br/>
+        DB Tsai, Senior Research Engineer, Netflix<br/>
+      </p>
+
+      <p><strong>A Summary of Previous Editions</strong><br/>
+        This is the third edition of the MLRec workshop. We had well-attended first two editions of the workshop with <a href="2015/index.html" target="blank">SDM 2015</a> and <a href="2016/index.html" target="blank">SDM 2016</a>. In MLRec2015, we had 3 contributed papers and 6 invited talks from both academia and industries. In MLRec2016, we had 4 contributed papers and 3 invited talks. There were approximate 50 attendees in each workshop, which have reached the room capacity.
+      </p>
+
+      <p><strong>Short Bibliography of Organizers</strong><br/>
+        <strong>Xia Ning</strong> is currently an Assistant Professor at the Department of Computer and Information Science, Indiana University – Purdue University Indianapolis (IUPUI). Before joining IUPUI, she was a research staff member at NEC Labs America. Xia received her PhD. degree in Computer Science at University of Minnesota, Twin Cities in 2012. Her research focuses on Recommender Systems, Chemical Informatics and Health Informatics. The results from her research have been presented in various conferences and published in leading peer reviewed journals and highly selective conference proceedings. She has been serving as a program committee member on various premier data mining conferences such as KDD, ICDM and SDM, and Recsys. <br/><br/>
+
+        <strong>Deguang Kong</strong> s currently a staff research scientist at Samsung Research America, Silicon Valley, leading the design and implementation of large-scale security aware app recommendation and privacy risk ranking systems for mobile devices. Before joining Samsung Research America, he ever worked as a research intern at America Los Alamos National Lab and NEC Research Lab Silicon Valley. He has strong interdisciplinary background in machine learning/data mining and cyber security. He has worked on various research projects, including robust feature learning via structural sparsity, distance learning and label propagation for malware classification, security-aware mobile app ranking and recommendation, etc. He has published over 20 referred articles in top conferences, including KDD, ICDM, SDM, WSDM, CIKM, ICML, NIPS, AAAI, ECML/PKDD, CVPR, SIGMETRICS, INFOCOM, etc. He was invited to serve as a reviewer for numerous top conferences and journals, such as KDD, ICDM, CCS, INFOCOM, TKDE, TNNLS, TKDD, and DMKD, etc. Deguang Kong has been on the organization panel for MLRec2015 and MLRec 2016. <br/><br/>
+
+        <strong>George Karypis</strong> is currently Professor at the Department of Computer Science and Engineering at the University of Minnesota in the Twin Cities of Minneapolis and Saint Paul and a member of the Digital Technology Center (DTC) at the University of Minnesota. His research interests are concentrated in the areas of bioinformatics, cheminformatics, data mining, and high-performance computing, and from time-to-time, he looks at various problems in the areas of information retrieval, collaborative filtering, and electronic design automation for VLSI CAD. Within these areas, his research focuses in developing novel algorithms for solving important existing and/or emerging problems, and on developing practical software tools implementing some of these algorithms. The results from his research have been presented in various conferences and published in leading peer reviewed journals and highly selective conference proceedings. George Karypis has been on the organization panel for MLRec2015 and MLRec 2016.<br/><br/>
+      </p>
+
+    </div>
+  </body>
+</html>
